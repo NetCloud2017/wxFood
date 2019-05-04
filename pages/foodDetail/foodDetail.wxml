@@ -1,0 +1,7 @@
+<!--pages/foodDetail/foodDetail.wxml-->
+<view>
+  <view>
+    商品详情    
+  </view>
+  <text>pages/foodDetail/foodDetail.wxml</text>
+</view>
