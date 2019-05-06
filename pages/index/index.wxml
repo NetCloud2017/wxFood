@@ -42,6 +42,6 @@
     </swiper>
   </view>
   <view class='home_list'>
-
+    <food-list></food-list>
   </view>
 </view>

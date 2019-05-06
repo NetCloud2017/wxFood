@@ -1,0 +1,11 @@
+/* pages/foodList/fooditem.wxss */
+.food_item{
+  margin: 20rpx;
+}
+.food_item_view {
+  width: 250rpx;
+}
+.food_item_img{
+  width: 220rpx;
+  height: 280rpx;
+}

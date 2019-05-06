@@ -1,4 +1,9 @@
 /**index.wxss**/
+.home_list{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
