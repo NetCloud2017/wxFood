@@ -20,26 +20,29 @@
       interval="2000"
     >
       <swiper-item class="swiper_item">
-        <image src='/images/foodImg/super.jpg'>
+        <image class="swiper-img" src='/images/foodImg/super.jpg'>
         </image>
       </swiper-item>
       <swiper-item class="swiper_item">
-        <image src='/images/foodImg/super.jpg'>
+        <image class="swiper-img" src='/images/foodImg/super.jpg'>
         </image>
       </swiper-item>
       <swiper-item class="swiper_item">
-        <image src='/images/foodImg/super.jpg'>
+        <image class="swiper-img" src='/images/foodImg/super.jpg'>
         </image>
       </swiper-item>
       <swiper-item class="swiper_item">
-        <image src='/images/foodImg/super.jpg'>
+        <image class="swiper-img" src='/images/foodImg/super.jpg'>
         </image>
       </swiper-item>
       <swiper-item class="swiper_item">
-        <image src='/images/foodImg/super.jpg'>
+        <image class="swiper-img" src='/images/foodImg/super.jpg'>
         </image>
       </swiper-item>
     </swiper>
+  </view>
+  <view>
+    <home-nav></home-nav>
   </view>
   <view class='home_list'>
     <food-list></food-list>

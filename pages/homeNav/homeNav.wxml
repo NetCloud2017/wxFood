@@ -1,0 +1,4 @@
+<!--pages/homeNav/homeNav.wxml-->
+<view class="navList">
+  <text>{{"菜单"}}</text>
+</view>

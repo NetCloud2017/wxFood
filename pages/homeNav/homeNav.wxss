@@ -1,0 +1,5 @@
+/* pages/homeNav/homeNav.wxss */
+.navList{
+  width: 100%;
+  padding: 20rpx 0rpx;
+}
