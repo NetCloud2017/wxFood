@@ -1,5 +1,10 @@
 /* pages/homeNav/homeNav.wxss */
 .navList{
   width: 100%;
-  padding: 20rpx 0rpx;
+  padding: 14rpx 0rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.navText {
+  padding: 0 20rpx;
 }
