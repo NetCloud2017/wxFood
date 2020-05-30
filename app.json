@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/newFood/newFood",
     "pages/profile/profile",
     "pages/foodDetail/foodDetail"
@@ -16,7 +15,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "热买"
+        "text": "你的餐厅"
       },
       {
         "pagePath": "pages/newFood/newFood",
@@ -24,7 +23,7 @@
       },
       {
         "pagePath": "pages/profile/profile",
-        "text": "我的订单"
+        "text": "个人主页"
       }
     ]
   },

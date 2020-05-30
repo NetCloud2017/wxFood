@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <!-- <view class="userinfo">
+	<!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -10,41 +10,35 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view> -->
-  <view class='home_swiper_contain'>
-    <swiper 
-      indicator-dots="true" 
-      indicator-color="rgba(255,255,255,1)" 
-      class="home_swiper"
-      indicator-active-color="#000"
-      autoplay="true"
-      interval="2000"
-    >
-      <swiper-item class="swiper_item">
-        <image class="swiper-img" src='/images/foodImg/super.jpg'>
-        </image>
-      </swiper-item>
-      <swiper-item class="swiper_item">
-        <image class="swiper-img" src='/images/foodImg/super.jpg'>
-        </image>
-      </swiper-item>
-      <swiper-item class="swiper_item">
-        <image class="swiper-img" src='/images/foodImg/super.jpg'>
-        </image>
-      </swiper-item>
-      <swiper-item class="swiper_item">
-        <image class="swiper-img" src='/images/foodImg/super.jpg'>
-        </image>
-      </swiper-item>
-      <swiper-item class="swiper_item">
-        <image class="swiper-img" src='/images/foodImg/super.jpg'>
-        </image>
-      </swiper-item>
-    </swiper>
-  </view>
-  <view>
-    <home-nav></home-nav>
-  </view>
-  <view class='home_list'>
-    <food-list></food-list>
-  </view>
+	<view class='home_swiper_contain'>
+		<swiper indicator-dots="true" indicator-color="rgba(255,255,255,1)" class="home_swiper" indicator-active-color="#000" autoplay="true" interval="2000">
+			<swiper-item class="swiper_item">
+				<image class="swiper-img" src='/images/foodImg/super.jpg'>
+				</image>
+			</swiper-item>
+			<swiper-item class="swiper_item">
+				<image class="swiper-img" src='/images/foodImg/super.jpg'>
+				</image>
+			</swiper-item>
+			<swiper-item class="swiper_item">
+				<image class="swiper-img" src='/images/foodImg/super.jpg'>
+				</image>
+			</swiper-item>
+			<swiper-item class="swiper_item">
+				<image class="swiper-img" src='/images/foodImg/super.jpg'>
+				</image>
+			</swiper-item>
+			<swiper-item class="swiper_item">
+				<image class="swiper-img" src='/images/foodImg/super.jpg'>
+				</image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view>
+		<home-nav></home-nav>
+	</view>
+	<view class='home_list'>
+		<food-list></food-list>
+		<food-list></food-list>
+	</view>
 </view>

@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "food-list": "../foodList/fooditem",
-    "home-nav": "../homeNav/homeNav"
+    "food-list": "../components/homeFoodItem/homeFoodItem",
+    "home-nav": "../components/homeNav/homeNav"
   }
 }
