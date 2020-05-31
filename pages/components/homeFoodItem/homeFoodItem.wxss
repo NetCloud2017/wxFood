@@ -4,8 +4,6 @@
 .food_item_view {
   width: 250rpx;
   height: 250rpx;
-  background-image: url('../../../images//foodImg/super.jpg');
-  background-size: contain;
 }
 
 .food_item_img {
