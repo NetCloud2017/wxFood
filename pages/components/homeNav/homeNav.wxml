@@ -1,8 +1,0 @@
-<!--pages/homeNav/homeNav.wxml-->
-<view class="navList">
-  <text class="navText">{{"自助麻辣烫"}}</text>
-  <text class="navText">{{"甜品"}}</text>
-  <text class="navText">{{"套餐饭"}}</text>
-  <text class="navText">{{"雪糕"}}</text>
-  <text class="navText">{{"汤"}}</text>
-</view>

@@ -1,0 +1,24 @@
+/**index.wxss**/
+.home_swiper_contain {
+  width: 100%;
+}
+
+.home_swiper_item {
+  width: 100%;
+}
+
+.swiper-img {
+  width: 100%;
+}
+
+.home_swiper {
+  width: 100%;
+  height: 340rpx
+}
+
+.home_list {
+  padding: 10rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

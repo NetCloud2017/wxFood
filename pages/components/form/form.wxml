@@ -1,8 +1,0 @@
-<!--pages/components/form.wxml-->
-
-<form report-submit="">
-	<input>
-	</input>
-	<button>
-	</button>
-</form>

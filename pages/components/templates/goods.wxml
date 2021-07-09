@@ -1,5 +1,0 @@
-<template name="goods">
-	<view>
-		<image src=""></image>
-	</view>
-</template>

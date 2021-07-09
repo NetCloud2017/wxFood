@@ -1,31 +1,23 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/newFood/newFood",
-    "pages/profile/profile",
-    "pages/foodDetail/foodDetail"
+    "pages/demo/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+
   },
   "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "你的餐厅"
-      },
-      {
-        "pagePath": "pages/newFood/newFood",
-        "text": "新品上市"
-      },
-      {
-        "pagePath": "pages/profile/profile",
-        "text": "个人主页"
-      }
-    ]
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "你的餐厅"
+    }, {
+      "pagePath": "pages/demo/index",
+      "text": "demo  Page "
+    }]
   },
   "sitemapLocation": "sitemap.json"
 }
