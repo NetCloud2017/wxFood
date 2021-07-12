@@ -1,23 +1,26 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/demo/index"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
-
-  },
-  "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "你的餐厅"
-    }, {
-      "pagePath": "pages/demo/index",
-      "text": "demo  Page "
-    }]
-  },
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/demo/index",
+        "pages/index/index",
+        "pages/demo2/demo2"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "你的餐厅"
+            },
+            {
+                "pagePath": "pages/demo/index",
+                "text": "demo  Page "
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
 }

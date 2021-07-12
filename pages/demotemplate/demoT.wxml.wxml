@@ -1,0 +1,11 @@
+<!--pages/demotemplate/demmT.wxml.wxml-->
+<text>pages/demotemplate/demmT.wxml.wxml</text>
+<template name="demoTemplate">
+	<block>
+		<view>{{time}}</view>
+		<view>
+			{{name}}
+		</view>
+		<text>{{age}}</text>
+	</block>
+</template>

@@ -4,13 +4,34 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    a: 1,
+    b: 2,
+    dataMsg: 'Hello World',
+    person: {
+      time: '2021 07 12',
+      name: '啦啦啦',
+      age: 20,
+      jod: 'engernner'
+    },
+    arr2: [
+      1, 2,
+      3, 4, 6, 8, 9
+    ],
+    arr: [{
+        name: 'a',
+        id: '234',
+      },
+      {
+        name: 'b',
+        id: '234',
+      }
+    ],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
@@ -21,7 +42,7 @@ Page({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -43,12 +64,18 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+  getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  onShareAppMessage() {
+    // 分享触发的函数；
+  },
+  onPullDownRefresh() {
+    // 下拉刷新触发的函数
   }
 })

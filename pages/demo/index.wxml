@@ -1,4 +1,63 @@
 <!--index.wxml-->
 <view class="container">
-	<text>pagee</text>
-</view>
+	<text>{{dataMsg}}</text>
+	<text id="item-{{person.name}}">{{person.age}}</text>
+	<view wx:if="false">111</view> <!-- 这里不管写什么都是字符串， 要用双引号才会解析运算-->
+	<view wx:if="{{false}}">222</view>
+	<!-- hidden  是 简单控制显示 和 隐藏 ，而 wx:if  是 销毁 标签 或 从新渲染， 它是惰性的  -->
+	<view wx:hidden="{{false}}">hidden</view>
+
+	<view wx:if="{{person}}">333</view>
+	<view wx:if="{{person.age>22}}">444</view>
+	<view wx:elif="{{person.age< 111}}">555</view>
+	<view wx:esle>1234</view>
+	<view>{{a}} + {{b}} = {{a + b}} </view>
+	<!-- 数组使用 -->
+	<block wx:for="{{arr}}">
+		<view>{{item.name}} ---{{index}}</view>
+	</block>
+
+	<block wx:for="{{arr2}}" wx:for-item="arritem" wx:for-index="arrIndex">
+		<view>{{arritem}} ---{{arrIndex}}</view>
+	</block>
+	<!-- 字符串也是可以 -->
+	<block wx:for="abcdefg" wx:for-item="arritem" wx:for-index="arrIndex">
+		<view>{{arritem}} ---{{arrIndex}}</view>
+	</block>
+	<!-- key属性可以保证 arr 数组 元素 发生变动时 保持原有 数据 不会混乱，  -->
+	<switch wx:for="{{arr}}" wx:key="id">
+		{{item.id}}
+	</switch>
+	<!--  *this （保留关键字） 指 的是当前  item -->
+	<switch wx:for="{{arr2}}" wx:key="*this">
+		{{item}}
+	</switch>
+
+	<!-- 模板使用 -->
+	<template is='demoTemplate1' data="{{...person}}"></template>
+	<!--  这里是 引入的 模板 -->
+	<!-- 这里两个路径写法都可以 -->
+	<!-- import 有作用域的概念，即只会 import 目标文件中定义的 template，而不会 import 目标文件 import 的 template。
+		如：C import B，B import A，在C中可以使用B定义的template，在B中可以使用A定义的template，但是C不能使用A定义的template。 -->
+	<!-- <import src="/pages/demotemplate/demoT.wxml" /> -->
+	<import src="../demotemplate/demoT.wxml" />
+	<template is="demoTemplate" data="{{...person}}"></template>
+
+
+	<!--  include   代码引入 注意： include 可以将目标文件除了 <template/> <wxs/> 外的整个代码引入，相当于是拷贝到 include 位置， -->
+	<view>
+		<include src="/pages/demotemplate/demoT.wxml" />
+	</view>
+</view>	
+
+<template name="demoTemplate1">
+	<block>
+		<view>
+			{{time}}
+		</view>
+		<view>
+			{{name}}
+		</view>
+		<text>{{age}}</text>
+	</block>
+</template>
