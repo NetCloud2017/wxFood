@@ -1,0 +1,6 @@
+function circleSqurea(r) {
+    return Math.PI * r * r
+}
+module.exports = {
+    circleSqurea: circleSqurea
+}

@@ -48,7 +48,7 @@
 	<view>
 		<include src="/pages/demotemplate/demoT.wxml" />
 	</view>
-</view>	
+</view>
 
 <template name="demoTemplate1">
 	<block>
@@ -61,3 +61,15 @@
 		<text>{{age}}</text>
 	</block>
 </template>
+
+
+<!-- wxs 模块化 -->
+<wxs module="foo">
+	var some_msg = "hello world";
+	module.exports = {
+		msg: some_msg,
+	}
+</wxs>
+<wxs src="./demomodule.wxs" module="util"></wxs>
+<view>{{util.add(1, 2)}}</view>
+<view> {{foo.msg}} </view>

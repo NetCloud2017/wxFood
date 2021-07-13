@@ -1,0 +1,18 @@
+function add(a, b) {
+    return a + b;
+}
+/*
+require函数
+在.wxs模块中引用其他 wxs 文件模块，可以使用 require 函数。
+引用的时候，要注意如下几点：
+只能引用 .wxs 文件模块，且必须使用相对路径。
+wxs 模块均为单例，wxs 模块在第一次被引用时，会自动初始化为单例对象。多个页面，多个地方，多次引用，使用的都是同一个 wxs 模块对象。
+如果一个 wxs 模块在定义之后，一直没有被引用，则该模块不会被解析与运行。
+*/
+var PI = require('./demo2module.wxs');
+
+console.log(PI.circleSqurea(2))
+module.exports = {
+    //  不支持 es 6 写法；
+    add: add
+}
