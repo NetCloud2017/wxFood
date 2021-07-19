@@ -8,6 +8,40 @@ require函数
 只能引用 .wxs 文件模块，且必须使用相对路径。
 wxs 模块均为单例，wxs 模块在第一次被引用时，会自动初始化为单例对象。多个页面，多个地方，多次引用，使用的都是同一个 wxs 模块对象。
 如果一个 wxs 模块在定义之后，一直没有被引用，则该模块不会被解析与运行。
+
+以下标识符不能作为变量名：
+
+delete
+void
+typeof
+
+null
+undefined
+NaN
+Infinity
+var
+
+if
+else
+
+true
+false
+
+require
+
+this
+function
+arguments
+return
+
+for
+while
+do
+break
+continue
+switch
+case
+default
 */
 var PI = require('./demo2module.wxs');
 

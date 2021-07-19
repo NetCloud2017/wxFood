@@ -73,3 +73,9 @@
 <wxs src="./demomodule.wxs" module="util"></wxs>
 <view>{{util.add(1, 2)}}</view>
 <view> {{foo.msg}} </view>
+<map>
+	<cover-view slot="callout">
+		<cover-view marker-id="1"></cover-view>
+		<cover-view marker-id="2"></cover-view>
+	</cover-view>
+</map>

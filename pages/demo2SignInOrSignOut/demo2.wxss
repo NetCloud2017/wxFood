@@ -1,0 +1,13 @@
+/* pages/demo2.wxss */
+.main {
+    width: 750rpx;
+    height: 100%;
+    text-align: center;
+}
+
+.coverView {
+    width: 50%;
+    height: auto;
+    background-color: #ad23ad;
+    
+}
