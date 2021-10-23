@@ -1,0 +1,7 @@
+<!--components/controls/index.wxml-->
+<view class="calcMarks">
+  <view class="calcMark" wx:for="{{marks}}" data-rule="{{mark.key}}" wx:for-item="mark" catchtap="calcTab" wx:key="index">
+      {{mark.value}}
+  </view>
+</view>
+

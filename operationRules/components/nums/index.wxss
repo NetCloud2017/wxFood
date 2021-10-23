@@ -1,0 +1,21 @@
+/* components/nums/index.wxss */
+.nums {
+  width: fit-content;
+  border: 1px solid #eee;
+  border-radius: 25rpx;
+  justify-content: space-around;
+  /* max-width: 500rpx; */
+  box-shadow: -10rpx 0rpx 15rpx #0f0;
+  display: grid;
+  grid-template-columns: repeat(3, 157rpx);
+  grid-template-rows: repeat(4, 157rpx);
+}
+.numItem {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 15rpx;
+  border: 1px solid blue;
+  text-align: center;
+  line-height: 120rpx;
+  border-radius: 10rpx;
+}

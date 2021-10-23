@@ -1,0 +1,4 @@
+<!--miniprogram/components/cloudTipModal/index.wxml-->
+<view class="computerScreenInput">
+  <view class="input">{{showNum}}</view>
+</view>

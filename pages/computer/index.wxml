@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="computerScreen">
+    <screen-view showNum='{{currentNum}}'></screen-view>
+  </view>
+  <view class="operatingPart">
+    <nums bindinputFunc="onInputFunc"></nums>
+    <view class="computerCtrl">
+      <calc-ctrl bindcalcRule="calcRule"></calc-ctrl>
+      <view class="ctrlBtn">
+        <!-- <view catchtap="deleteNum">delete</view> -->
+        <view catchtap="cancel">归零</view>
+        <view catchtap="calcResult">=</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<!--components/nums/index.wxml-->
+<view class="nums">
+  <view catchtap="numTap" class="numItem" wx:for="{{list}}" 
+  data-num="{{num}}"
+  wx:for-item="num" wx:key="index">
+     {{num}}
+  </view>
+</view>

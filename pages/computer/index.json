@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "screen-view": "/components/screenView/index",
+    "calc-ctrl": "/components/controls/index",
+    "nums": "/components/nums/index"
+  }
+}

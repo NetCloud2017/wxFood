@@ -1,0 +1,27 @@
+/**index.wxss**/
+.computerScreen {
+  box-shadow: 0rpx 10rpx 15rpx  #00FF00;
+}
+.operatingPart {
+  margin-top: 35rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.computerCtrl {
+  box-shadow: 10rpx 0rpx 15rpx #0f0;
+  border: 1px solid #eee;
+}
+.ctrlBtn {
+  margin-top: 50rpx;
+}
+ 
+.ctrlBtn view {
+  margin: 15rpx auto;
+  width: 130rpx;
+  height: 100rpx;
+  border: 1px solid blue;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+}

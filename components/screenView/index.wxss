@@ -1,0 +1,14 @@
+
+.input {
+  border: none;
+  margin: 0;
+  padding: 0 20rpx;
+  flex-grow: 1;
+}
+.computerScreenInput {
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  min-height: 120rpx;
+  display: flex;
+  align-items: center;
+}
