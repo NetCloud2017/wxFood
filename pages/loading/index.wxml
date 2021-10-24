@@ -1,0 +1,12 @@
+<view class="loadingView">
+  <scroll-view scroll-y="true" 
+  refresher-triggered="{{refresh}}"
+  bindscrolltolower="_onReachBottom"
+  bindrefresherrefresh="_onPullDownRefresh" refresher-enabled="true" style="{{height}}" bindscroll="onScroll" scroll-top="{{toTop}}">
+    <view class="commodityWrap">
+      <commodity wx:for="{{list}}" commodityData="{{item}}" wx:key="index">
+      </commodity>
+    </view>
+  </scroll-view>
+  <text class="toTopsIcon" hidden="{{showIcon}}"  catchtap="scrollToTop" >top</text>
+</view>

@@ -1,0 +1,19 @@
+/* pages/loading/index.wxss */
+.commodityWrap {
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows:  repeat(2,auto);
+  justify-items: center;
+}
+.toTopsIcon {
+  position: fixed;
+  bottom: 40rpx;
+  right: 40rpx;
+  width: 75rpx;
+  height: 75rpx;
+  background-color: #fff;
+  font-size: 11px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 75rpx;
+}
