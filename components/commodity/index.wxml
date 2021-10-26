@@ -1,0 +1,5 @@
+<view class="commodity" catchtap="linkToDetail">
+  <image mode="aspectFit" class="commodityPic" webp="true" src="{{commodityData.commodityImg}}"    alt="" />
+  <view class="commodityName">{{commodityData.commodityName}}</view>
+  <view class="commodityPri">{{commodityData.commodityPrice}}{{commodityData.currency}}</view>
+</view>

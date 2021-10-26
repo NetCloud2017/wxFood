@@ -1,4 +1,5 @@
 <!--miniprogram/components/cloudTipModal/index.wxml-->
 <view class="computerScreenInput">
-  <view class="input">{{showNum}}</view>
+  <view class="input">{{calaExpression}}</view>
+  <view class="result" hidden="{{calcList.length < 3}}">= {{result}}</view>
 </view>

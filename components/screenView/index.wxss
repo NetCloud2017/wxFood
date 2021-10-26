@@ -1,14 +1,23 @@
 
-.input {
-  border: none;
-  margin: 0;
-  padding: 0 20rpx;
-  flex-grow: 1;
-}
+ 
 .computerScreenInput {
   border: 1px solid #ccc;
   border-radius: 10rpx;
-  min-height: 120rpx;
+  height: 220rpx;
   display: flex;
-  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+  
+}
+.input {
+  white-space: wrap;
+  word-break: break-all;
+  width: 90%;
+  padding: 0 10rpx;
+  height: 180rpx;
+  overflow: hidden;
+}
+.result {
+  margin: 15rpx;
 }
