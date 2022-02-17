@@ -1,33 +1,39 @@
 {
+  "entryPagePath": "pages/demo2SignInOrSignOut/demo2",
+  "pages": [
+    "pages/demo2SignInOrSignOut/demo2",
+    "pages/demo/index",
+    "pages/index/index",
+    "pages/computer/index",
+    "pages/loading/index",
+    "pages/healthMark/index",
+    "pages/baoanLibrary/index"
+  ],
 
-    "entryPagePath": "pages/demo2SignInOrSignOut/demo2",
-    "pages": [
-        "pages/demo2SignInOrSignOut/demo2",
-        "pages/demo/index",
-        "pages/index/index"
-    ],
-
-    "debug": true,
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "WeChat",
-        "navigationBarTextStyle": "black",
-        "enablePullDownRefresh": true
-    },
-    "tabBar": {
-        "list": [{
-                "pagePath": "pages/index/index",
-                "text": "你的餐厅"
-            }, {
-                "pagePath": "pages/demo/index",
-                "text": "demo  Page "
-            },
-            {
-                "pagePath": "pages/demo2SignInOrSignOut/demo2",
-                "text": "demo  login "
-            }
-        ]
-    },
-    "sitemapLocation": "sitemap.json"
+  "debug": true,
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "KMai",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "你的餐厅"
+      },
+      {
+        "pagePath": "pages/demo/index",
+        "text": "demo  Page "
+      },
+      {
+        "pagePath": "pages/demo2SignInOrSignOut/demo2",
+        "text": "demo  login "
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

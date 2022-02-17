@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view class="computerScreen">
-    <screen-view calcList='{{calcList}}' result="{{result}}" calaExpression="{{calaExpression}}" ></screen-view>
+    <screen-view calcList='{{calcList}}' result="{{result}}" calaExpression="{{calaExpression}}"></screen-view>
   </view>
   <view class="operatingPart">
     <nums bindinputFunc="onInputFunc"></nums>
@@ -13,5 +13,15 @@
         <!-- <view catchtap="calcResult">=</view> -->
       </view>
     </view>
+
+
   </view>
+
+  <navigator url="../healthMark/index" hover-class="navigator-hover">
+    健康码
+  </navigator>
+   <navigator url="../baoanLibrary/index" hover-class="navigator-hover">
+    保安图书馆签到
+  </navigator>
+
 </view>
