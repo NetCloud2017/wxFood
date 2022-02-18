@@ -26,8 +26,8 @@
         "text": "你的餐厅"
       },
       {
-        "pagePath": "pages/demo/index",
-        "text": "demo  Page "
+        "pagePath": "pages/computer/index",
+        "text": "computer"
       },
       {
         "pagePath": "pages/demo2SignInOrSignOut/demo2",
